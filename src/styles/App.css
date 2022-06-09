@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(243, 243, 243);
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.post {
+  background-color: rgba(248, 251, 253, 0.993);
+  display: flex;
+  padding: 15px;
+  border: 2px solid teal;
+  margin-top: 10px;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 7px;
+  box-shadow: 1px 2px 2px 0.1px rgba(0, 183, 255, 0.2);
+  /* cursor: pointer; */
+}
+
+.post__content {
+  cursor: pointer;
+}
+
+.post__content:hover {
+  opacity: 0.6;
+}
+
+.remove-btn {
+  margin-right: 0.5rem;
+}
+
+.post__btn {
+  display: flex;
+}
+
+.post-enter {
+  transform: translateX(-350px);
+}
+.post-enter-active {
+  transform: translateX(0px);
+  transition: all 500ms ease-in;
+}
+.post-exit {
+  opacity: 1;
+}
+
+.post-exit-active {
+  transform: translateX(750px);
+  transition: all 500ms ease-in;
+}
+
+.page__wrapper {
+  margin-top: 30px;
+  display: flex;
+}
+
+.page {
+  padding: 10px;
+  border: 1px solid teal;
+  cursor: pointer;
+}
+
+.page__current {
+  border: 2px solid orange;
+  font-weight: bold;
+}
+
+.navbar {
+  border: 1px solid teal;
+  height: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  background: rgba(228, 236, 240, 0.623);
+}
+
+.navbar__links {
+  margin-right: auto;
+}
+
+.right-button-container {
+  display: flex;
+  align-items: flex-end;
+}
+
+.MyButton_myBtn__2yioc:hover {
+  opacity: 0.6;
+}
